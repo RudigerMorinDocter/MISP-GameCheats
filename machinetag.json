@@ -1,0 +1,22 @@
+{
+  "namespace": "game-cheats",
+  "description": "Game cheats taxonomy",
+  "version": 1,
+  "predicates": [
+    {
+      "value": "my-predicate",
+      "expanded": "my-predicate"
+    }
+  ],
+  "values": [
+    {
+      "predicate": "my-predicate",
+      "entry": [
+        {
+          "value": "a-value",
+          "expanded": "A value"
+        }
+      ]
+    }
+  ]
+}
