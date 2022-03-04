@@ -1,8 +1,8 @@
-# MISP Taxonomy project
+# MISP Object project
 
 But du projet : Définir la taxonomie des cheats de jeux vidéo + potentiellement créer une petite galaxie derrière. :space_invader: :skull_and_crossbones:
 
-# Taxonomy
+# Object 
 
 **Ici nous indiquons ce que nous souhaitons mettre dans notre taxonomie.**
 
