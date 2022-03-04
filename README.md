@@ -2,9 +2,9 @@
 <img src="Small_Skull.png" height="200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![MISP Logo](https://upload.wikimedia.org/wikipedia/commons/9/91/Misp-logo.png) \
 MISP Taxonomy for **Video Game Cheats** in general, as they often come hand-in-hand with **malwares** or  **dangerous practices**. :space_invader::skull_and_crossbones:
 
-# MISP Taxonomy project
+# MISP Object project
 
-Overall goal of project is to contribute to MISP by adding a taxonomy to describe game cheats, allowing future contributors to expand / use them in galaxies and/or to coincide events.
+Overall goal of project is to contribute to MISP by adding a object to describe game cheats, allowing future contributors to expand / use them in galaxies and/or to coincide events.
 
 #### Contributors
 Main contributors : 

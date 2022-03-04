@@ -1,0 +1,68 @@
+{
+  "attributes": {
+    "cheat-name": {
+      "description": "Name of the cheat",
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "cheat-type": {
+      "description": "In-game ",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "values_list": [
+        "Force field",
+        "Aim bot",
+        "Invicibility",
+        "Auto farmer",
+        "Scripting",
+        "Macros",
+        "Disconnecting",
+        "Fly",
+        "God mode",
+        "Exploit",
+        "Boosting/Win trading",
+        "Ghosting",
+        "wallhack",
+        "Others"
+      ]
+    },
+    "creation-date": {
+      "description": "Creation date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    },
+    "game": {
+      "description": "Game name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "implementation": {
+      "description": "How the cheat is implemented",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "values_list": [
+        "Game code modification",
+        "In-memory data manipulation",
+        "System software modification",
+        "Packet interception and manipulation"
+      ]
+    },
+    "operating-system": {
+      "description": "Operating System and it's version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Game cheats object",
+  "meta-category": "misc",
+  "name": "game-cheat",
+  "required": [
+    "game",
+    "operating-system",
+    "cheat-name"
+  ],
+  "uuid": "cc373ccb-68a1-441b-9329-004a9bf27ae9",
+  "version": 1
+}
