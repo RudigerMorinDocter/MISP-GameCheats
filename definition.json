@@ -1,46 +1,67 @@
 {
   "attributes": {
-    "cheat-name": {
-      "description": "Name of the cheat",
-      "disable_correlation": true,
-      "misp-attribute": "text"
+    "author": {
+      "description": "Author",
+      "misp-attribute": "text",
+      "ui-priority": 3
     },
-    "cheat-type": {
-      "description": "In-game ",
+    "cheat-description": {
+      "description": "Detailed description of how is the cheat enabled, and how it work.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cheat-name": {
+      "description": "Cheat name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "cheat-type": {
+      "description": "In-game",
+      "multiple": true,
+      "ui-priority": 0,
       "values_list": [
-        "Force field",
         "Aim bot",
-        "Invicibility",
         "Auto farmer",
-        "Scripting",
-        "Macros",
+        "Boosting",
+        "DDoS",
         "Disconnecting",
-        "Fly",
-        "God mode",
         "Exploit",
-        "Boosting/Win trading",
+        "Fly",
+        "Force field",
         "Ghosting",
-        "wallhack",
+        "God mode",
+        "Invicibility",
+        "Macros",
+        "RapidFire",
+        "Scripting",
+        "Wallhack",
+        "Win trading",
         "Others"
       ]
+    },
+    "cheat-version": {
+      "misp-attribute": "text",
+      "ui-priority": 3
     },
     "creation-date": {
       "description": "Creation date",
       "disable_correlation": true,
-      "misp-attribute": "datetime"
+      "misp-attribute": "datetime",
+      "ui-priority": 2
     },
-    "game": {
-      "description": "Game name",
+    "game-affected": {
+      "description": "Game affected",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "implementation": {
-      "description": "How the cheat is implemented",
+      "description": "How cheating is implemented",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 2,
       "values_list": [
         "Game code modification",
         "In-memory data manipulation",
@@ -53,15 +74,26 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "pricing": {
+      "description": "Price, 0 if free",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 3
+    },
+    "webpage": {
+      "description": "Website, Download page",
+      "misp-attribute": "url",
+      "ui-priority": 3
     }
   },
   "description": "Game cheats object",
   "meta-category": "misc",
   "name": "game-cheat",
   "required": [
-    "game",
-    "operating-system",
-    "cheat-name"
+    "cheat-name",
+    "game-affected",
+    "cheat-type"
   ],
   "uuid": "cc373ccb-68a1-441b-9329-004a9bf27ae9",
   "version": 1
