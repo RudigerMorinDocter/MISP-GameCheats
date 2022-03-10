@@ -1,26 +1,22 @@
 {
   "attributes": {
-    "author": {
-      "description": "Author",
-      "misp-attribute": "text",
-      "ui-priority": 3
-    },
-    "cheat-description": {
-      "description": "Detailed description of how is the cheat enabled, and how it work.",
+    "affected-game": {
+      "description": "Name of the game that is targeted by the cheatware.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 4
     },
     "cheat-name": {
-      "description": "Cheat name",
+      "description": "Known name of the game cheat, if given.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "cheat-type": {
-      "description": "In-game",
+      "description": "Select the type of cheat.",
       "multiple": true,
-      "ui-priority": 0,
+      "misp-attribute": "text",
+      "ui-priority": 1,
       "values_list": [
         "Aim bot",
         "Auto farmer",
@@ -42,26 +38,31 @@
       ]
     },
     "cheat-version": {
+      "description": "Any information about the cheatware version.",
       "misp-attribute": "text",
       "ui-priority": 3
     },
-    "creation-date": {
-      "description": "Creation date",
+    "compilation-date": {
+      "description": "Compilation date of the game cheat, if known.",
       "disable_correlation": true,
       "misp-attribute": "datetime",
+      "ui-priority": 6
+    },
+    "creator": {
+      "description": "Individual and/or Group and/or Organization that created the cheat.",
+      "misp-attribute": "identity",
+      "ui-priority": 10
+    },
+    "ig-cheat-behaviour": {
+      "description": "Describe the in-game behaviour of the cheat (e.g. You selected 'Aim Bot', here you can add details like 'Activate by pressing F7, Deactivate by pressing F8. Not detected be Easy Anti-Cheat.'",
+      "misp-attribute": "text",
       "ui-priority": 2
     },
-    "game-affected": {
-      "description": "Game affected",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
     "implementation": {
-      "description": "How cheating is implemented",
+      "description": "How cheatware is implemented",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 2,
+      "ui-priority": 7,
       "values_list": [
         "Game code modification",
         "In-memory data manipulation",
@@ -69,32 +70,37 @@
         "Packet interception and manipulation"
       ]
     },
-    "operating-system": {
-      "description": "Operating System and it's version",
+    "implementation-details": {
+      "description": "Additionnal informations about the implementation of the cheatware. (e.g. Requires to swap a dll file.)",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 8
+    },
+    "operating-system": {
+      "description": "Operating system required and its version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9
     },
     "pricing": {
-      "description": "Price, 0 if free",
+      "description": "Cheatware price, 0 if free.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 3
+      "ui-priority": 5
     },
     "webpage": {
-      "description": "Website, Download page",
+      "description": "Place where the cheat is promoted. Website, Forum, Download page, ...",
       "misp-attribute": "url",
-      "ui-priority": 3
+      "ui-priority": 11
     }
   },
-  "description": "Game cheats object",
+  "description": "Describes a game cheat or a cheatware.",
   "meta-category": "misc",
   "name": "game-cheat",
   "required": [
-    "cheat-name",
-    "game-affected",
+    "affected-game",
     "cheat-type"
   ],
-  "uuid": "cc373ccb-68a1-441b-9329-004a9bf27ae9",
-  "version": 1
+  "uuid": "ab31f87b-f8ac-4dfc-b610-359302b4e86b",
+  "version": 5
 }
