@@ -117,6 +117,7 @@ Here we will quickly describe the technical implementation of our MISP object. Y
 * `operating-system` : *Operating system required and its version.*
 * `creator` : *Individual and/or Group and/or Organization that created the cheat.*
 * `webpage` : *Place where the cheat is promoted. Website, Forum, Download page, ...*
+* `cheat-screenshot` : *Screenshot of the cheat at work.*
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
