@@ -9,13 +9,18 @@
       "description": "Known name of the game cheat, if given.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 11
+      "ui-priority": 12
+    },
+    "cheat-screenshot": {
+      "description": "Screenshot of the cheat at work.",
+      "misp-attribute": "attachment",
+      "ui-priority": 9
     },
     "cheat-type": {
       "description": "Select the type of cheat.",
       "misp-attribute": "text",
       "multiple": true,
-      "ui-priority": 10,
+      "ui-priority": 11,
       "values_list": [
         "Aim bot",
         "Auto farmer",
@@ -57,7 +62,7 @@
       "description": "Describe the in-game behaviour of the cheat (e.g. You selected 'Aim Bot', here you can add details like 'Activate by pressing F7, Deactivate by pressing F8. Not detected be Easy Anti-Cheat.'",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 9
+      "ui-priority": 10
     },
     "implementation": {
       "description": "How cheatware is implemented",
@@ -104,5 +109,5 @@
     "cheat-type"
   ],
   "uuid": "ab31f87b-f8ac-4dfc-b610-359302b4e86b",
-  "version": 6
+  "version": 7
 }
