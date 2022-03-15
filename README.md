@@ -81,6 +81,9 @@ For more information checkout official [MISP Github Repository](https://github.c
 
 * [MISP Documentation](https://www.misp-project.org)
 * [Google Search Bar](https://www.google.com)
+* [Wikipedia EN - Cheating in video games](https://en.wikipedia.org/wiki/Cheating_in_video_games)
+* [Wikipedia EN - Cheating in online games](https://en.wikipedia.org/wiki/Cheating_in_online_games)
+* [Wikipedia FR - Cheat](https://fr.wikipedia.org/wiki/Cheat)
 * [Toilet Paper ???](http://papertoilet.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -106,7 +109,7 @@ Here we will quickly describe the technical implementation of our MISP object. Y
 
 ***Attributes :***
 * `cheat-name` : *Known name of the game cheat, if given.*
-* `cheat-type` : *Select the type of cheat (from a dropdown menu).*
+* `cheat-type` : *Select a type of cheat (from a dropdown menu).*
 * `ig-cheat-behaviour` : *Describe the in-game behaviour of the cheat (e.g. You selected 'Aim Bot', here you can add details like 'Activate by pressing F7, Deactivate by pressing F8. Not detected be Easy Anti-Cheat.')".*
 * `cheat-version` : *Any information about the cheatware version.*
 * `affected-game` : *Name of the game that is targeted by the cheatware.*
