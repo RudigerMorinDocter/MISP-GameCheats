@@ -132,8 +132,8 @@ Here we will quickly describe the technical implementation of our MISP object. Y
 - [X] Creation of new object based on existing templates.
 - [X] Adding useful content...
 - [X] Finalizing work and correction of typos.
-- [ ] Validation by the MISP team in charge of the project.
-- [ ] Integration of object to the MISP Project !
+- [x] Validation by the MISP team in charge of the project.
+- [x] Integration of object to the MISP Project !
 
 See the [open issues](https://github.com/RudigerMorinDocter/MISP-GameCheats/issues) for a full list of proposed features (and known issues).
 
